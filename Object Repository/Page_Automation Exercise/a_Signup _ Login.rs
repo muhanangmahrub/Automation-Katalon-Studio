@@ -6,16 +6,16 @@
    <elementGuidId>5eae01c9-e6f7-4004-bef0-9534ce281609</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@href = '/login']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@href = '/login' and (text() = ' Signup / Login' or . = ' Signup / Login')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>[href=&quot;\/login&quot;]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@href = '/login']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -33,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>61fc610a-9e04-4f71-a668-7929ddcff8cb</webElementGuid>
+      <webElementGuid>89486842-46db-434f-bb42-73caa459d70c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,7 +41,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/login</value>
-      <webElementGuid>358796bd-d068-416b-a95f-c0dc825ee15f</webElementGuid>
+      <webElementGuid>7951d987-4fa7-4644-a4eb-539af2750bf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Signup / Login</value>
-      <webElementGuid>9dccfc7a-2191-438d-8731-654d38e8a59a</webElementGuid>
+      <webElementGuid>e0203b44-83ea-4b39-bf24-3e44adb00dbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-3b975af8f8441b098bdfe13841faf220</value>
-      <webElementGuid>83f5615c-b21a-4484-b986-ffcfad1a67ac</webElementGuid>
+      <webElementGuid>234f5f4f-ed5d-4a7d-a01b-739426c95b9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@href = '/login']</value>
-      <webElementGuid>ebb8c622-e946-442e-896c-f9be7a0c28c7</webElementGuid>
+      <webElementGuid>1e71ceb3-5569-418a-8fa0-6e008180c18f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@href = '/login']</value>
-      <webElementGuid>3fa123ce-50b9-446f-90e0-c595d4922479</webElementGuid>
+      <webElementGuid>4d7ab8e4-f45e-4417-932a-ebab98c36998</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,6 +81,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/login' and (text() = ' Signup / Login' or . = ' Signup / Login')]</value>
-      <webElementGuid>4f77593e-a0f8-440f-bf25-f88d3508e8e2</webElementGuid>
+      <webElementGuid>956a330a-5ddd-4a20-bc5f-98713a62a647</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>643b05a9-dfca-4aa1-844a-b910e3fca49b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ad_position_box</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@id = 'ad_position_box']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ad_position_box</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -70,14 +70,6 @@
       <type>Main</type>
       <value>//*[@id = 'ad_position_box']</value>
       <webElementGuid>4c95ec08-d83e-4c8f-af69-6fd6a0946243</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/Page_Automation Exercise - Account Created/iframe_aswift_2</value>
-      <webElementGuid>edf1f978-151d-4b36-a2d7-6000f4656321</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>

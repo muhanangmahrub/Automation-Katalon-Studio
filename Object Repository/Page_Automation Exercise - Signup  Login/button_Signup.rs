@@ -6,12 +6,16 @@
    <elementGuidId>dba71185-da48-4f6d-ab7e-d1a24e8cb801</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[data-qa=&quot;signup-button&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@data-qa = 'signup-button']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'submit' and (text() = 'Signup' or . = 'Signup')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[data-qa=&quot;signup-button&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>5bbc45e0-29a7-4fb1-97bf-20bdcc85e3d1</webElementGuid>
+      <webElementGuid>96fec23d-6a7a-4f7f-bde1-4ea25a968033</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>submit</value>
-      <webElementGuid>74053968-582f-44dd-b48f-817d4dec457f</webElementGuid>
+      <webElementGuid>f6a97640-4c48-40aa-8ae8-b47ee8e608b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>data-qa</name>
       <type>Main</type>
       <value>signup-button</value>
-      <webElementGuid>385a4da4-0cd4-4141-962c-9af9b60f3a82</webElementGuid>
+      <webElementGuid>0b12fbca-6ba5-4160-a648-2d35ec780540</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-default</value>
-      <webElementGuid>579c089e-66e3-441c-908c-def5b41a2aa2</webElementGuid>
+      <webElementGuid>c941083f-a1ed-4210-b007-f3aaf8eab568</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Signup</value>
-      <webElementGuid>71f668e9-532e-41b0-a185-ed97a70f4945</webElementGuid>
+      <webElementGuid>85ce7bd4-e8f6-44b9-8aa4-a83b6f1d5e76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-592bd186a872a2ca98f056ddb7e50c7e</value>
-      <webElementGuid>2a2f0041-b915-4c43-af08-34641f97f34f</webElementGuid>
+      <webElementGuid>8b19609e-810b-4040-a29d-132a680d7883</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@data-qa = 'signup-button']</value>
-      <webElementGuid>06b7c996-17d5-4368-8ea8-18d1183a79a8</webElementGuid>
+      <webElementGuid>84db36f5-3530-4b73-b714-fb9390b6748f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@data-qa = 'signup-button']</value>
-      <webElementGuid>93106a6f-ac48-4e9f-b9cc-5d4a5eea030d</webElementGuid>
+      <webElementGuid>1cf66a50-3549-4ac5-a27b-6933b93b3cbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +97,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'submit' and (text() = 'Signup' or . = 'Signup')]</value>
-      <webElementGuid>57244ba4-4548-4835-bb2f-cccb6da4053d</webElementGuid>
+      <webElementGuid>62bd23e0-c01e-452a-a1b2-399de0ccf8cc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,16 @@
    <elementGuidId>3ff51324-d5cf-4df9-a084-2b960cf6fefc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[data-qa=&quot;signup-name&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@data-qa = 'signup-name']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @placeholder = 'Name' and @name = 'name']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[data-qa=&quot;signup-name&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>7d3451fb-b406-45e3-b350-7148b3e4dfe1</webElementGuid>
+      <webElementGuid>ab558f86-f7cc-43cb-9ca7-9a2ba48fc1ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>42a1b974-5ec6-4554-957b-3e399dc0c5a1</webElementGuid>
+      <webElementGuid>72bbcfd7-b90a-4b9e-96bf-e3e082298d1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>data-qa</name>
       <type>Main</type>
       <value>signup-name</value>
-      <webElementGuid>6c64424e-a42f-4575-9fe0-80f09608cea1</webElementGuid>
+      <webElementGuid>7983aa78-6205-4521-aa03-f4e74b8b7bb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Name</value>
-      <webElementGuid>06688e35-37a6-427b-9330-5657759a7e9f</webElementGuid>
+      <webElementGuid>854e8d2d-6834-4b5e-83f2-8aaf089061b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>name</name>
       <type>Main</type>
       <value>name</value>
-      <webElementGuid>d24b9d37-7459-4576-ad76-7f016e42b85a</webElementGuid>
+      <webElementGuid>ce030145-8468-49dc-a018-4abe2bf64cba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-c90599a67c5b5794e4957e5a7f46e6f0</value>
-      <webElementGuid>9a89a306-3073-4bfe-a4d4-4916672127a8</webElementGuid>
+      <webElementGuid>e71143e5-7402-4050-96c7-6ab9ad76fc7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@data-qa = 'signup-name']</value>
-      <webElementGuid>f0b44882-2258-4e92-9602-4b3f20d7291f</webElementGuid>
+      <webElementGuid>80903e17-f526-40f7-a2d1-211ff6b56f30</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@data-qa = 'signup-name']</value>
-      <webElementGuid>458058ad-33ed-49cf-8e59-578de51b66e6</webElementGuid>
+      <webElementGuid>e9f8c9e1-6df5-4494-9078-a903a6a112b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +97,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Name' and @name = 'name']</value>
-      <webElementGuid>f175f724-2380-452b-a43a-ac39bffbac53</webElementGuid>
+      <webElementGuid>6faa4070-c6a4-4372-9012-11bf2855f82f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

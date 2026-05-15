@@ -43,5 +43,7 @@ WebUI.takeScreenshot()
 
 WebUI.click(findTestObject('Page_Automation Exercise/a_Logout'))
 
+WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+
 WebUI.closeBrowser()
 

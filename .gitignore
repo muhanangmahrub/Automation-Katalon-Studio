@@ -23,3 +23,6 @@ build
 /.project
 /Reports          ← hasil run, bisa besar
 *.properties      ← bisa berisi credentials
+.DS_Store
+**/.DS_Store
+dump.rdb

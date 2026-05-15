@@ -6,12 +6,12 @@
    <elementGuidId>1e6935b4-3321-4ec5-9615-1713100c3c8c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.continue-prompt-text</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' continue-prompt-text ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.continue-prompt-text</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -62,14 +62,6 @@
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' continue-prompt-text ')]</value>
       <webElementGuid>abd35a4e-3002-407d-a31c-4aaa1321d8a6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/Page_Automation Exercise/iframe_aswift_4</value>
-      <webElementGuid>6be8e866-7098-44a1-b143-4409b246706d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -23,25 +23,23 @@ WebUI.navigateToUrl('https://automationexercise.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.takeScreenshot()
+WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
 
 WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
 
-WebUI.verifyTextPresent('Login to your account', false)
+WebUI.verifyTextPresent('New User Signup!', false)
 
 WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address Login'), 'febritesting1@gmail.com')
+WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Name'), 'Febri Septian')
 
-WebUI.setEncryptedText(findTestObject('Page_Automation Exercise - Signup  Login/input_Password'), 'h1bZaoNZrXJGImBBMGIoZQ==')
+WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address'), 'febritesting1@gmail.com')
 
-WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Login'))
+WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Signup'))
 
-WebUI.verifyTextPresent('Logged in as', false)
+WebUI.verifyTextPresent('Email Address already exist!', false)
 
 WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Page_Automation Exercise/a_Logout'))
 
 WebUI.closeBrowser()
 
