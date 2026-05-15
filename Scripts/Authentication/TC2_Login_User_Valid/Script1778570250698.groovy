@@ -16,6 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import pages.LoginSignupPage
+import pages.HomePage
+
+def loginPage = new LoginSignupPage()
+def homePage = new HomePage()
 
 WebUI.openBrowser('')
 
@@ -23,25 +28,23 @@ WebUI.navigateToUrl('https://automationexercise.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.takeScreenshot()
+homePage.verifyLoginSignupVisible()
 
-WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+homePage.clickSignupLogin()
 
-WebUI.verifyTextPresent('Login to your account', false)
+loginPage.verifyText()
 
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address Login'), 'febritesting1@gmail.com')
-
-WebUI.setEncryptedText(findTestObject('Page_Automation Exercise - Signup  Login/input_Password'), 'h1bZaoNZrXJGImBBMGIoZQ==')
-
-WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Login'))
+loginPage.login('febritesting1@gmail.com', 'h1bZaoNZrXJGImBBMGIoZQ==')
 
 WebUI.verifyTextPresent('Logged in as', false)
 
 WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Page_Automation Exercise/a_Logout'))
+homePage.verifyLoggedIn()
+
+homePage.clickLogout()
+
+WebUI.takeScreenshot()
 
 WebUI.closeBrowser()
 

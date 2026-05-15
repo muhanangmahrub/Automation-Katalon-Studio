@@ -16,6 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import pages.LoginSignupPage
+import pages.SignupDetailPage
+import pages.HomePage
+import pages.AccountCreatedPage
+import pages.AccountDeletedPage
+
+def registerPage = new LoginSignupPage()
+def registerDetailPage = new SignupDetailPage()
+def homePage = new HomePage()
+def accountCreatedPage = new AccountCreatedPage()
+def accountDeletedPage = new AccountDeletedPage()
+
 
 WebUI.openBrowser('')
 
@@ -23,67 +35,39 @@ WebUI.navigateToUrl('https://automationexercise.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+homePage.verifyLoginSignupVisible()
 
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Name'), 'Diki Suhendi')
+homePage.clickSignupLogin()
 
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Email Address Register'), 'diki.suhendi16@gmail.com')
+registerPage.signup("Diki Suhendi", "diki.suhendi16@gmail.com")
 
-WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Signup'))
+registerDetailPage.fillDetails(
+	"8SQVv/p9jVScEs4/2CZsLw==",
+	'1',
+	'1',
+	'2001',
+	'Diki',
+	'Suhendi',
+	'PT Testing 1999',
+	'Jalan Kebenaran Tuhan',
+	'Jalan Kebaikan',
+	'United States',
+	'Michigan',
+	'Detroit',
+	'19999',
+	'087555666777')
 
-WebUI.verifyTextPresent('ENTER ACCOUNT INFORMATION', false)
+accountCreatedPage.verifyAccountCreated()
 
-WebUI.takeScreenshot()
+accountCreatedPage.clickContinue()
 
-WebUI.click(findTestObject('Page_Automation Exercise - Signup/div_uniform-id_gender1'))
+homePage.verifyLoggedIn()
 
-WebUI.setEncryptedText(findTestObject('Page_Automation Exercise - Signup/input_Password _'), '8SQVv/p9jVScEs4/2CZsLw==')
+homePage.clickDeleteAccount()
 
-WebUI.selectOptionByValue(findTestObject('Page_Automation Exercise - Signup/select_days'), '1', false)
+accountDeletedPage.verifyAccountDeleted()
 
-WebUI.selectOptionByValue(findTestObject('Page_Automation Exercise - Signup/select_months'), '1', false)
-
-WebUI.selectOptionByValue(findTestObject('Page_Automation Exercise - Signup/select_years'), '2001', false)
-
-WebUI.click(findTestObject('Page_Automation Exercise - Signup/label_Sign up for our newsletter'))
-
-WebUI.click(findTestObject('Page_Automation Exercise - Signup/label_Receive special offers from our partners'))
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_First name _'), 'Diki')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Last name _'), 'Suhendi')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Company'), 'PT Testing 1999')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Address _ (Street address, P.O. Box, Compa'), 'Jalan Kebenaran Tuhan')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Address 2'), 'Jalan Kebaikan')
-
-WebUI.selectOptionByValue(findTestObject('Page_Automation Exercise - Signup/select_Country _'), 'United States', false)
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_State _'), 'Michigan')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_City _'), 'Detroit')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_zipcode'), '19999')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Mobile Number _'), '087555666777')
-
-WebUI.click(findTestObject('Page_Automation Exercise - Signup/button_Create Account'))
-
-WebUI.verifyTextPresent('ACCOUNT CREATED!', false)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Page_Automation Exercise - Account Created/a_Continue'))
-
-WebUI.click(findTestObject('Page_Automation Exercise/a_Delete Account'))
-
-WebUI.verifyTextPresent('ACCOUNT DELETED!', false)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Page_Automation Exercise - Account Created/a_Continue'))
+accountDeletedPage.clickContinue()
 
 WebUI.closeBrowser()
 

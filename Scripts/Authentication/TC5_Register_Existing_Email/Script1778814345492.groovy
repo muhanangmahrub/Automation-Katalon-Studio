@@ -16,6 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import pages.HomePage
+import pages.LoginSignupPage
+
+def homePage = new HomePage()
+def loginSignupPage = new LoginSignupPage()
 
 WebUI.openBrowser('')
 
@@ -23,19 +28,13 @@ WebUI.navigateToUrl('https://automationexercise.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+homePage.verifyLoginSignupVisible()
 
-WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+homePage.clickSignupLogin()
 
-WebUI.verifyTextPresent('New User Signup!', false)
+loginSignupPage.verifyText()
 
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Name'), 'Febri Septian')
-
-WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address'), 'febritesting1@gmail.com')
-
-WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Signup'))
+loginSignupPage.signup("Febri Septian", "febritesting1@gmail.com")
 
 WebUI.verifyTextPresent('Email Address already exist!', false)
 
