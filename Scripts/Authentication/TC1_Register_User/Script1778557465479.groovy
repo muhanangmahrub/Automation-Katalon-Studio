@@ -21,6 +21,7 @@ import pages.SignupDetailPage
 import pages.HomePage
 import pages.AccountCreatedPage
 import pages.AccountDeletedPage
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def registerPage = new LoginSignupPage()
 def registerDetailPage = new SignupDetailPage()
@@ -39,23 +40,23 @@ homePage.verifyLoginSignupVisible()
 
 homePage.clickSignupLogin()
 
-registerPage.signup("Diki Suhendi", "diki.suhendi16@gmail.com")
+registerPage.signup(name, email)
 
 registerDetailPage.fillDetails(
-	"8SQVv/p9jVScEs4/2CZsLw==",
-	'1',
-	'1',
-	'2001',
-	'Diki',
-	'Suhendi',
-	'PT Testing 1999',
-	'Jalan Kebenaran Tuhan',
-	'Jalan Kebaikan',
-	'United States',
-	'Michigan',
-	'Detroit',
-	'19999',
-	'087555666777')
+	password,
+	day,
+	month,
+	year,
+	firstname,
+	lastname,
+	company,
+	address,
+	address2,
+	country,
+	state,
+	city,
+	zipcode,
+	mobile)
 
 accountCreatedPage.verifyAccountCreated()
 
