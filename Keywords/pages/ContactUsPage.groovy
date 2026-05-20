@@ -18,11 +18,6 @@ public class ContactUsPage {
 		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Contact Us/div_Success Your details have been submitted successfully'), 3)
 		WebUI.takeScreenshot()
 		WebUI.click(findTestObject('Page_Automation Exercise - Contact Us/a_Home'))
-		try {
-			WebUI.click(findTestObject('Object Repository/Page_Automation Exercise - Contact Us/close_Ads'))
-		} catch (Exception e) {
-			println('Ads not appear!!!')
-		}
 		WebUI.takeScreenshot()
 	}
 }

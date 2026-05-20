@@ -5,17 +5,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 public class HomePage {
-	def verifyLoginSignupVisible() {
-		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
-		WebUI.takeScreenshot()
-	}
-	
-	def verifyLoggedIn() {
-		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Logout'))
-		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Delete Account'))
-		WebUI.takeScreenshot()
-	}
-	
 	def clickDeleteAccount() {
 		WebUI.click(findTestObject('Page_Automation Exercise/a_Delete Account'))
 	}
@@ -29,6 +18,44 @@ public class HomePage {
 	}
 	
 	def clickContactUs() {
-		WebUI.click(findTestObject('Object Repository/Page_Automation Exercise/a_Contact us'))
+		WebUI.click(findTestObject('Page_Automation Exercise/a_Contact us'))
 	}
+	
+	def clickTestCases() {
+		WebUI.click(findTestObject('Page_Automation Exercise/a_Test Cases'))
+	}
+	
+	def clickProducts() {
+		WebUI.click(findTestObject('Page_Automation Exercise/a_Products'))
+	}
+	
+	def scrollToFooter() {
+		WebUI.scrollToElement(findTestObject('Page_Automation Exercise/h2_Subscription'), 1)
+	}
+	
+	def subscribeEmail(String email) {
+		WebUI.setText(findTestObject('Page_Automation Exercise/input_Subscription_susbscribe_email'), email)
+	}
+	
+	def verifySubscriptionVisible() {
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise/h2_Subscription'), 1)
+		WebUI.takeScreenshot()
+	}
+	
+	def verifySubscriptionSuccess() {
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise/div_You have been successfully subscribed'), 1)
+		WebUI.takeScreenshot()
+	}
+	
+	def verifyLoginSignupVisible() {
+		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
+		WebUI.takeScreenshot()
+	}
+	
+	def verifyLoggedIn() {
+		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Logout'))
+		WebUI.verifyElementVisible(findTestObject('Page_Automation Exercise/a_Delete Account'))
+		WebUI.takeScreenshot()
+	}
+	
 }
