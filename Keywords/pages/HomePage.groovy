@@ -27,4 +27,8 @@ public class HomePage {
 	def clickSignupLogin() {
 		WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
 	}
+	
+	def clickContactUs() {
+		WebUI.click(findTestObject('Object Repository/Page_Automation Exercise/a_Contact us'))
+	}
 }
