@@ -3,12 +3,6 @@ import pages.HomePage
 
 def homePage = new HomePage()
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://automationexercise.com/')
-
-WebUI.maximizeWindow()
-
 homePage.scrollToFooter()
 
 homePage.verifySubscriptionVisible()
@@ -16,5 +10,3 @@ homePage.verifySubscriptionVisible()
 homePage.subscribeEmail("denny_caknan@gmail.com")
 
 homePage.verifySubscriptionSuccess()
-
-WebUI.closeBrowser()

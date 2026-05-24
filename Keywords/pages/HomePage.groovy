@@ -17,6 +17,10 @@ public class HomePage {
 		WebUI.click(findTestObject('Page_Automation Exercise/a_Signup _ Login'))
 	}
 	
+	def clickCart() {
+		WebUI.click(findTestObject('Page_Automation Exercise/a_Cart'))
+	}
+	
 	def clickContactUs() {
 		WebUI.click(findTestObject('Page_Automation Exercise/a_Contact us'))
 	}

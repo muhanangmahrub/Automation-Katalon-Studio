@@ -12,13 +12,6 @@ def homePage = new HomePage()
 def accountCreatedPage = new AccountCreatedPage()
 def accountDeletedPage = new AccountDeletedPage()
 
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://automationexercise.com/')
-
-WebUI.maximizeWindow()
-
 homePage.verifyLoginSignupVisible()
 
 homePage.clickSignupLogin()
@@ -52,6 +45,3 @@ homePage.clickDeleteAccount()
 accountDeletedPage.verifyAccountDeleted()
 
 accountDeletedPage.clickContinue()
-
-WebUI.closeBrowser()
-

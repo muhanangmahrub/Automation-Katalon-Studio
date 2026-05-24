@@ -7,12 +7,6 @@ def homePage = new HomePage()
 def productsPage = new AllProductsPage()
 def productDetailPage = new ProductDetailPage()
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://automationexercise.com/')
-
-WebUI.maximizeWindow()
-
 homePage.verifyLoginSignupVisible()
 
 homePage.clickProducts()
@@ -22,5 +16,3 @@ productsPage.verifyProductsPage()
 productsPage.searchProduct("dress")
 
 productsPage.verifyResultSearch()
-
-WebUI.closeBrowser()

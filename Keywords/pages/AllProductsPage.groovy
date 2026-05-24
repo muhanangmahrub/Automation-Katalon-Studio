@@ -5,8 +5,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebElement
 
 public class AllProductsPage {
-	def clickViewProduct() {
-		WebUI.click(findTestObject('Page_Automation Exercise - Products/a_View Product First'))
+	
+	def addToCart(String productID) {
+		WebUI.mouseOver(findTestObject('Object Repository/Page_Automation Exercise - Products/div_Dynamic - Product', [("id"): productID]))
+		WebUI.click(findTestObject('Object Repository/Page_Automation Exercise - Products/a_Dynamic - Add to Cart', [("id"): productID]))
+	}
+	
+	def clickContinueShopping() {
+		WebUI.click(findTestObject('Object Repository/Page_Automation Exercise - Products/b_Continue Shopping'))
+	}
+	
+	def clickViewCart() {
+		WebUI.click(findTestObject('Object Repository/Page_Automation Exercise - Products/a_View Cart'))
+	}
+	
+	def clickViewProduct(String productID) {
+		WebUI.click(findTestObject('Page_Automation Exercise - Products/a_Dynamic - View Product', [("id"): productID]))
 	}
 	
 	def searchProduct(String keyword) {
@@ -16,7 +30,6 @@ public class AllProductsPage {
 	
 	def verifyProductsPage() {
 		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Products/h2_All Products'), 2)
-		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Products/a_View Product First'), 2)
 		WebUI.takeScreenshot()
 	}
 	

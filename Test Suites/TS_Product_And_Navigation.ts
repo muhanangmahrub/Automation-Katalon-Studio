@@ -46,4 +46,18 @@
       <testCaseId>Test Cases/Product_And_Navigation/TC10_Subscription_Homepage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e2fc5e2a-dc43-4963-91f5-6c188ab01d75</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Product_And_Navigation/TC11_Subscription_Cartpage</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>71de3f6c-8f8e-4977-82ba-888574a6080f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Product_And_Navigation/TC12_Add_Products_In_Cart</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

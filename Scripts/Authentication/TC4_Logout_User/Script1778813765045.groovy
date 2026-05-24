@@ -5,12 +5,6 @@ import pages.LoginSignupPage
 def homePage = new HomePage()
 def loginPage = new LoginSignupPage()
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://automationexercise.com/')
-
-WebUI.maximizeWindow()
-
 homePage.verifyLoginSignupVisible()
 
 homePage.clickSignupLogin()
@@ -26,6 +20,3 @@ WebUI.takeScreenshot()
 homePage.clickLogout()
 
 homePage.verifyLoginSignupVisible()
-
-WebUI.closeBrowser()
-
