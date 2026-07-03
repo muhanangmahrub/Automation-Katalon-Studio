@@ -7,6 +7,7 @@ public class SignupDetailPage {
 	def fillDetails(String password, String day, String month, String year, String firstname,
 		String lastname, String company, String address, String address2, String country,
 		String state, String city, String zipcode, String mobile) {
+		WebUI.waitForElementPresent(findTestObject('Page_Automation Exercise - Signup/div_uniform-id_gender1'), 2)
 		WebUI.verifyTextPresent('ENTER ACCOUNT INFORMATION', false)
 		WebUI.takeScreenshot()
 		WebUI.click(findTestObject('Page_Automation Exercise - Signup/div_uniform-id_gender1'))

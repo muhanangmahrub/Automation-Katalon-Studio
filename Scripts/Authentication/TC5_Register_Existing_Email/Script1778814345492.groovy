@@ -11,7 +11,7 @@ homePage.clickSignupLogin()
 
 loginSignupPage.verifyText()
 
-loginSignupPage.signup("Febri Septian", "febritesting1@gmail.com")
+loginSignupPage.signupExisting("Febri Septian", "febritesting1@gmail.com")
 
 WebUI.verifyTextPresent('Email Address already exist!', false)
 

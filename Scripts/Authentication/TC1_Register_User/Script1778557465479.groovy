@@ -16,7 +16,7 @@ homePage.verifyLoginSignupVisible()
 
 homePage.clickSignupLogin()
 
-registerPage.signup(name, email)
+registerPage.signup(name)
 
 registerDetailPage.fillDetails(
 	password,

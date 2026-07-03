@@ -10,7 +10,16 @@ public class LoginSignupPage {
 		WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Login'))
 	}
 	
-	def signup(String name, String email) {
+	def signup(String name) {
+		def pool = ('a'..'z') + ('A'..'Z') + ('0'..'9')
+		def randomString = (1..10).collect { pool[new Random().nextInt(pool.size())] }.join()
+		def randomEmail = "${randomString}@example.com"
+		WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Name'), name)
+		WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address'), randomEmail)
+		WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Signup'))
+	}
+	
+	def signupExisting(String name, String email) {
 		WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Name'), name)
 		WebUI.setText(findTestObject('Page_Automation Exercise - Signup  Login/input_Email Address'), email)
 		WebUI.click(findTestObject('Page_Automation Exercise - Signup  Login/button_Signup'))
