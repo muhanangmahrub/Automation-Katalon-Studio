@@ -6,13 +6,34 @@ on:
   pull_request:
     branches: ["main"]
 
+env:
+  KATALON_VERSION: "11.1.3"
+
 jobs:
-  build:
+  test:
+    name: ${{ matrix.suite.name }}
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        suite:
+          - name: Authentication
+            args: '-testSuitePath="Test Suites/TS_Authentication" -browserType="Chrome (headless)"'
+          - name: Product_And_Navigation
+            args: '-testSuitePath="Test Suites/TS_Product_And_Navigation" -browserType="Chrome (headless)"'
+          - name: Regression_CrossBrowser
+            args: '-testSuiteCollectionPath="Test Suites/TSC_Regression_CrossBrowser"'
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Cache Katalon Studio
+        uses: actions/cache@v4
+        with:
+          path: ~/.katalon
+          key: katalon-studio-${{ runner.os }}-${{ env.KATALON_VERSION }}
 
       - name: Install Xvfb
         run: sudo apt-get install -y xvfb
@@ -25,6 +46,6 @@ jobs:
         env:
           DISPLAY: :99
         with:
-          version: "11.1.3"
+          version: ${{ env.KATALON_VERSION }}
           projectPath: "${{ github.workspace }}"
-          args: '-noSplash -retry=0 -testSuitePath="Test Suites/TS_Authentication" -browserType="Chrome (headless)" -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 ${{ matrix.suite.args }} -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
