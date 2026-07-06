@@ -1,0 +1,22 @@
+name: Katalon Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Katalon Tests
+        uses: katalon-studio/katalon-studio-github-action@v3
+        with:
+          version: "10.0.0"
+          projectPath: "${{ github.workspace }}"
+          args: '-noSplash -runMode=console -projectPath="${{ github.workspace }}" -retry=0 -testSuitePath="Test Suites/TS_Authentication" -browserType="Chrome (headless)" -apiKey=${{ secrets.KATALON_API_KEY }}'
