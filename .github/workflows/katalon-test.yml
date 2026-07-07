@@ -36,6 +36,37 @@ jobs:
           path: ~/.katalon
           key: katalon-studio-${{ runner.os }}-${{ env.KATALON_VERSION }}
 
+      - name: Prepare Katalon Studio (fix macOS space-in-path bug)
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${{ env.KATALON_VERSION }}"
+          KATALON_DIR="$HOME/.katalon/$VERSION"
+          DONE_FILE="$KATALON_DIR/.katalon.done"
+
+          if [ ! -f "$DONE_FILE" ]; then
+            URL="https://download.katalon.com/$VERSION/Katalon_Studio_Engine_MacOS-$VERSION.tar.gz"
+            echo "Downloading Katalon Studio Engine from $URL"
+            mkdir -p "$KATALON_DIR"
+            curl -sL "$URL" -o /tmp/katalon-engine.tar.gz
+            tar -xzf /tmp/katalon-engine.tar.gz -C "$KATALON_DIR"
+            rm -f /tmp/katalon-engine.tar.gz
+            touch "$DONE_FILE"
+          fi
+
+          # Katalon's macOS engine ships as "Katalon Studio Engine.app" — the space in
+          # that directory name breaks an internal file: URI lookup for katalon.ini.
+          # Rename just the bundle wrapper (contents untouched). Runs unconditionally
+          # so it also self-heals caches populated before this fix existed.
+          find "$KATALON_DIR" -type d -iname "*.app" | while read -r appdir; do
+            base=$(basename "$appdir")
+            if [[ "$base" == *" "* ]]; then
+              newpath="$(dirname "$appdir")/$(echo "$base" | tr -d ' ')"
+              echo "Renaming '$appdir' -> '$newpath'"
+              mv "$appdir" "$newpath"
+            fi
+          done
+
       - name: Katalon Studio GitHub Action
         uses: katalon-studio/katalon-studio-github-action@v4.0
         with:
