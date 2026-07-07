@@ -12,7 +12,7 @@ env:
 jobs:
   test:
     name: ${{ matrix.suite.name }}
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 15
 
     strategy:
@@ -36,17 +36,8 @@ jobs:
           path: ~/.katalon
           key: katalon-studio-${{ runner.os }}-${{ env.KATALON_VERSION }}
 
-      - name: Install Xvfb
-        run: sudo apt-get install -y xvfb
-
-      - name: Start Xvfb
-        run: Xvfb :99 -screen 0 1920x1080x24 &
-
       - name: Katalon Studio GitHub Action
         uses: katalon-studio/katalon-studio-github-action@v4.0
-        env:
-          DISPLAY: :99
-          NO_AT_BRIDGE: "1"
         with:
           version: ${{ env.KATALON_VERSION }}
           projectPath: "${{ github.workspace }}"
