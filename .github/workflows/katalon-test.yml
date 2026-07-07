@@ -13,6 +13,7 @@ jobs:
   test:
     name: ${{ matrix.suite.name }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     strategy:
       fail-fast: false
@@ -45,6 +46,7 @@ jobs:
         uses: katalon-studio/katalon-studio-github-action@v4.0
         env:
           DISPLAY: :99
+          NO_AT_BRIDGE: "1"
         with:
           version: ${{ env.KATALON_VERSION }}
           projectPath: "${{ github.workspace }}"
