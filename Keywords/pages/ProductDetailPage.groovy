@@ -5,12 +5,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class ProductDetailPage {
 	def verifyProductDetail() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/h2_Blue Top'), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/p_Category Women  Tops'), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/span_Rs. 500'), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/p_Availability In Stock'), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/p_Condition New'), 1)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Automation Exercise - Product Details/p_Brand Polo'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/h2_Product Title'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/p_Category'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/span_Price'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/p_Availability'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/p_Condition'), 1)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Product Details/p_Brand'), 1)
 		WebUI.takeScreenshot()
+	}
+	
+	def setQuantity(String quantity) {
+		WebUI.clearText(findTestObject('Page_Automation Exercise - Product Details/input_Quantity'))
+		WebUI.setText(findTestObject('Page_Automation Exercise - Product Details/input_Quantity'), quantity)
+	}
+	
+	def clickAddToCart() {
+		WebUI.click(findTestObject('Page_Automation Exercise - Product Details/button_Add to Cart'))
+	}
+	
+	def clickViewCart() {
+		WebUI.click(findTestObject('Page_Automation Exercise - Cart/a_View Cart'))
 	}
 }

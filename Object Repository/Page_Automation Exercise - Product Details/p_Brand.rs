@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Condition New</name>
+   <name>p_Brand</name>
    <tag></tag>
-   <elementGuidId>6b74176b-0389-4a80-ade5-63525adeef1e</elementGuidId>
+   <elementGuidId>a5b27339-39af-4966-8766-6abab42bd339</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Availability:'])[1]/following::p[1]</value>
+         <value>(//b[normalize-space()='Brand:'])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>p:nth-of-type(3)</value>
+         <value>p:nth-of-type(4)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Condition: New&quot;i</value>
+         <value>internal:text=&quot;Brand: Polo&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,62 +29,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>1df8acb8-2497-4c5b-8a10-8ffb752e83bd</webElementGuid>
+      <webElementGuid>f6af16f9-f544-4e6c-82d7-c99e4fadad12</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Condition: New</value>
-      <webElementGuid>a5a0b2b1-2698-4fda-9650-7e8051d10a3a</webElementGuid>
+      <value>Brand: Polo</value>
+      <webElementGuid>53bf45a6-d4ca-456b-899a-719d38f11b04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/section[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-9 padding-right&quot;]/div[@class=&quot;product-details&quot;]/div[@class=&quot;col-sm-7&quot;]/div[@class=&quot;product-information&quot;]/p[3]</value>
-      <webElementGuid>54e148e4-8daa-44eb-a7aa-e9dad2f8544d</webElementGuid>
+      <value>/html[1]/body[1]/section[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-9 padding-right&quot;]/div[@class=&quot;product-details&quot;]/div[@class=&quot;col-sm-7&quot;]/div[@class=&quot;product-information&quot;]/p[4]</value>
+      <webElementGuid>833dd41d-6ecc-46ae-ba54-f01bae83ee3a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Availability:'])[1]/following::p[1]</value>
-      <webElementGuid>49ee2972-c269-4789-b9c9-6636ca0f74a6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Condition:'])[1]/following::p[1]</value>
+      <webElementGuid>755bc02b-a554-47e1-8164-4507ecc19b79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Brand:'])[1]/preceding::p[1]</value>
-      <webElementGuid>6237301e-1d76-4c9b-8aa7-d639354d3214</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Availability:'])[1]/following::p[2]</value>
+      <webElementGuid>c060a93f-fa27-4b85-ba62-04da429c6cf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='New']/parent::*</value>
-      <webElementGuid>071a7749-45af-4013-9640-3f85ac9ff53a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Write Your Review'])[1]/preceding::p[1]</value>
+      <webElementGuid>93acfa33-2e8a-4abf-86c6-4dfbdf7bb1d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//p[3]</value>
-      <webElementGuid>efb29b2e-7c44-463a-822c-9252691a0502</webElementGuid>
+      <value>//p[4]</value>
+      <webElementGuid>68ce37e2-4dff-4191-8c71-8e336e7eec41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Condition: New' or . = 'Condition: New')]</value>
-      <webElementGuid>10c5914b-ae22-438a-bedd-c70ff97592e3</webElementGuid>
+      <value>//p[(text() = 'Brand: Polo' or . = 'Brand: Polo')]</value>
+      <webElementGuid>49b285cf-3bc8-4e1c-acad-607c89f7af32</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

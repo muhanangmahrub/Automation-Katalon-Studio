@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Availability In Stock</name>
+   <name>p_Condition</name>
    <tag></tag>
-   <elementGuidId>106edede-78e4-4f1b-b121-d3fa99755573</elementGuidId>
+   <elementGuidId>6b74176b-0389-4a80-ade5-63525adeef1e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Quantity:'])[1]/following::p[1]</value>
+         <value>(//b[normalize-space()='Condition:'])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.product-information > p:nth-of-type(2)</value>
+         <value>p:nth-of-type(3)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Availability: In Stock&quot;i</value>
+         <value>internal:text=&quot;Condition: New&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,62 +29,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>1c9affc8-d26f-40cb-91de-fd78c13f4c0c</webElementGuid>
+      <webElementGuid>fed3ce49-7cd8-45dc-990a-eabb3094f014</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Availability: In Stock</value>
-      <webElementGuid>9420cb85-209d-4aa4-847c-0d14930636c6</webElementGuid>
+      <value>Condition: New</value>
+      <webElementGuid>d88ceefa-f356-4beb-a869-08ab5b318809</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/section[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-9 padding-right&quot;]/div[@class=&quot;product-details&quot;]/div[@class=&quot;col-sm-7&quot;]/div[@class=&quot;product-information&quot;]/p[2]</value>
-      <webElementGuid>133b0e9d-d2b1-45f0-b5f4-baff24ded82b</webElementGuid>
+      <value>/html[1]/body[1]/section[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-9 padding-right&quot;]/div[@class=&quot;product-details&quot;]/div[@class=&quot;col-sm-7&quot;]/div[@class=&quot;product-information&quot;]/p[3]</value>
+      <webElementGuid>046640d5-862b-4f5f-8438-7c929f6daa25</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quantity:'])[1]/following::p[1]</value>
-      <webElementGuid>99032b69-f40f-466c-875b-ea426ecfec08</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Availability:'])[1]/following::p[1]</value>
+      <webElementGuid>5a346acd-08c9-429e-bf9b-2df4fe2475d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Condition:'])[1]/preceding::p[1]</value>
-      <webElementGuid>2e13e427-2490-4e3e-b1a9-5ca381bc45b3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Brand:'])[1]/preceding::p[1]</value>
+      <webElementGuid>4b8b20d7-8a35-44bb-a1f0-fee8a75dfeef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='In Stock']/parent::*</value>
-      <webElementGuid>b239ff60-d59c-43fd-88a4-c7aa4ddc2703</webElementGuid>
+      <value>//*/text()[normalize-space(.)='New']/parent::*</value>
+      <webElementGuid>3e6045bf-8272-4518-a0d0-7b62db88e508</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/p[2]</value>
-      <webElementGuid>6c0805b1-45fb-4055-a0c1-d57f24a500fa</webElementGuid>
+      <value>//p[3]</value>
+      <webElementGuid>2e7fb803-b461-428a-a36c-3a59904a0e14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Availability: In Stock' or . = 'Availability: In Stock')]</value>
-      <webElementGuid>6cf33516-67f8-4a4f-985b-11cd54053d03</webElementGuid>
+      <value>//p[(text() = 'Condition: New' or . = 'Condition: New')]</value>
+      <webElementGuid>3947b150-6088-4b1d-9c42-a26ac966283d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

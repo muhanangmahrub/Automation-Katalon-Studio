@@ -31,11 +31,11 @@ public class CartPage {
 	}
 	
 	def verifyProductDetails(String productID, String expectedPrice, String expectedQuantity, String expectedTotal) {
-		String actualPrice = WebUI.getText(findTestObject('Object Repository/Page_Automation Exercise - Cart/price_Dynamic - Product', [("id"): productID]))
-		String actualQuantity = WebUI.getText(findTestObject('Object Repository/Page_Automation Exercise - Cart/quantity_Dynamic - Product', [("id"): productID]))
-		String actualTotal = WebUI.getText(findTestObject('Object Repository/Page_Automation Exercise - Cart/total_Dynamic - Product', [("id"): productID]))
+		String actualPrice = WebUI.getText(findTestObject('Page_Automation Exercise - Cart/price_Dynamic - Product', [("id"): productID]))
+		String actualQuantity = WebUI.getText(findTestObject('Page_Automation Exercise - Cart/quantity_Dynamic - Product', [("id"): productID]))
+		String actualTotal = WebUI.getText(findTestObject('Page_Automation Exercise - Cart/total_Dynamic - Product', [("id"): productID]))
 		
-		WebUI.verifyMatch(actualTotal, expectedTotal, false)
+		WebUI.verifyMatch(actualPrice, expectedPrice, false)
 		WebUI.verifyMatch(actualQuantity, expectedQuantity, false)
 		WebUI.verifyMatch(actualTotal, expectedTotal, false)
 	}

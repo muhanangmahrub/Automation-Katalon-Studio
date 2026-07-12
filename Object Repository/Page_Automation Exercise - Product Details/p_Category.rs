@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Category Women  Tops</name>
+   <name>p_Category</name>
    <tag></tag>
    <elementGuidId>8381ad34-8826-4e45-b65c-032790b125a1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Blue Top'])[1]/following::p[1]</value>
+         <value>//div[@class='product-information']//p[contains(text(),'Category:')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>0c2f3665-3c46-4bd7-8d9e-90252b32b3ed</webElementGuid>
+      <webElementGuid>0a070d77-c1ad-4750-9403-2d5e39fdb966</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Category: Women > Tops</value>
-      <webElementGuid>70ae0e83-7e6c-41d1-b5ba-f4578516bcf1</webElementGuid>
+      <webElementGuid>a2fabfc2-f5b7-4677-a56b-71f3b1c9437d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[1]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-9 padding-right&quot;]/div[@class=&quot;product-details&quot;]/div[@class=&quot;col-sm-7&quot;]/div[@class=&quot;product-information&quot;]/p[1]</value>
-      <webElementGuid>a6b92d63-15ce-4a48-9e43-31522bbb82e9</webElementGuid>
+      <webElementGuid>a71089cf-619a-4e05-88bc-f2843f57dddc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Blue Top'])[1]/following::p[1]</value>
-      <webElementGuid>cd02bd72-d622-40ad-ba00-df226279240f</webElementGuid>
+      <webElementGuid>14086b40-35a4-4c1c-8dfb-7ac1fcf307a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Continue Shopping'])[1]/following::p[1]</value>
-      <webElementGuid>55734db1-fb3c-4f49-b421-6cb0422fb9f6</webElementGuid>
+      <webElementGuid>ed5a8627-647e-441f-bf86-68cff56029ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rs. 500'])[1]/preceding::p[1]</value>
-      <webElementGuid>1ba1afcf-cacb-439e-9fff-cab783631124</webElementGuid>
+      <webElementGuid>305c4695-1e86-44be-99dc-a976272e5479</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Quantity:'])[1]/preceding::p[1]</value>
-      <webElementGuid>591b8f31-3f67-4961-a684-f2b394dcdece</webElementGuid>
+      <webElementGuid>7c9df9c1-9ad2-4ac8-8a41-34772f5c11f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Category: Women > Tops']/parent::*</value>
-      <webElementGuid>ae038948-9d2d-4ea4-8a63-a77ef85e5d19</webElementGuid>
+      <webElementGuid>2b7a29f3-a428-4c06-b199-398497ce38bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/p</value>
-      <webElementGuid>0f10b43e-d093-42ce-9871-eee10e4544fc</webElementGuid>
+      <webElementGuid>8e95df9f-2ad7-47b9-bdae-79b31a96f37d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Category: Women > Tops' or . = 'Category: Women > Tops')]</value>
-      <webElementGuid>12a0c861-df45-4a31-9a35-dbea4186f3c0</webElementGuid>
+      <webElementGuid>0456fb48-8407-4674-87f0-2a91f9781c9a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
