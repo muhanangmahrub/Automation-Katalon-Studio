@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC16</name>
+   <name>TC16_Place_Order_Login_before_Checkout</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

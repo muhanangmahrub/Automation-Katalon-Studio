@@ -12,7 +12,14 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>733eec37-21f1-419a-8ead-80dfc9db6e09</testSuiteGuid>
    <testCaseLink>
-      <guid>b0d73839-a709-4fa5-bb72-812089495221</guid>
+      <guid>e12c727d-6afd-4a2f-9278-f20e693471d1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Authentication/TC3_Login_User_Invalid</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>086a7068-d69d-4d4e-a3c3-d127bd3b4101</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Authentication/TC1_Register_User</testCaseId>
@@ -115,31 +122,24 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>50cb0623-f5cc-4aa1-928c-e0a802ac2ac9</guid>
+      <guid>cb9b6926-c969-4505-bcc8-938201c27de6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Authentication/TC5_Register_Existing_Email</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d6c9871-2d58-4887-8175-31c5bae2f27f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Authentication/TC2_Login_User_Valid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f2847fe6-bdbd-424d-b703-acbccebd78d0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Authentication/TC3_Login_User_Invalid</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8e34804c-3cac-45e0-a7f4-3d14f32e7d23</guid>
+      <guid>f7490beb-8e76-495e-b0b4-fac303e11f55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Authentication/TC4_Logout_User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8c485b08-77ff-4448-8dd5-ce0586b2dc56</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Authentication/TC5_Register_Existing_Email</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

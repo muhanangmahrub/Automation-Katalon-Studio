@@ -17,6 +17,7 @@ public class ProductDetailPage {
 	def setQuantity(String quantity) {
 		WebUI.clearText(findTestObject('Page_Automation Exercise - Product Details/input_Quantity'))
 		WebUI.setText(findTestObject('Page_Automation Exercise - Product Details/input_Quantity'), quantity)
+		WebUI.takeScreenshot()
 	}
 	
 	def clickAddToCart() {

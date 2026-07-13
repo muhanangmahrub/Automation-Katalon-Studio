@@ -62,4 +62,13 @@ public class HomePage {
 		WebUI.takeScreenshot()
 	}
 	
+	def viewCategoryProducts() {
+		WebUI.click(findTestObject('Page_Automation Exercise/div_Category Women'))
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise/div_SubCategory Women'), 1)
+		WebUI.takeScreenshot()
+		WebUI.click(findTestObject('Page_Automation Exercise/div_Category Men'))
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise/div_SubCategory Women'), 1)
+		WebUI.takeScreenshot()
+	}
+	
 }

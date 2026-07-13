@@ -39,4 +39,36 @@ public class CartPage {
 		WebUI.verifyMatch(actualQuantity, expectedQuantity, false)
 		WebUI.verifyMatch(actualTotal, expectedTotal, false)
 	}
+	
+	def clickProceedToCheckout() {
+		WebUI.click(findTestObject('Page_Automation Exercise - Cart/a_Proceed To Checkout'))
+	}
+	
+	def verifyAddressAndReviewOrder() {
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Cart/Checkout/h_Address Details'), 2)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Cart/Checkout/ul_Address Delivery'), 2)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Cart/Checkout/ul_Address Invoice'), 2)
+		WebUI.verifyElementPresent(findTestObject('Page_Automation Exercise - Cart/Checkout/h_Review Your Order'), 2)
+		WebUI.takeScreenshot()
+	}
+	
+	def inputCommentAndPlaceOrder() {
+		WebUI.setText(findTestObject('Page_Automation Exercise - Cart/Checkout/textarea_Comment Message'), 'Test Katalon')
+		WebUI.click(findTestObject('Page_Automation Exercise - Cart/Checkout/button_Place Order'))
+	}
+	
+	def signupOrLogin() {
+		WebUI.click(findTestObject('Page_Automation Exercise - Cart/a_Register or Login'))
+	}
+	
+	def removeProductFromCart(String productID) {
+		WebUI.click(findTestObject('Page_Automation Exercise - Cart/i_Remove Product', [("id"): productID]))
+	}
+	
+	def verifyProductsAreNotInCart(List<String> productIDs) {
+		productIDs.each { productID ->
+			WebUI.verifyElementNotPresent(findTestObject('Page_Automation Exercise - Cart/row_Dynamic - Product', [("id"): productID]), 2)
+		}
+		WebUI.takeScreenshot()
+	}
 }

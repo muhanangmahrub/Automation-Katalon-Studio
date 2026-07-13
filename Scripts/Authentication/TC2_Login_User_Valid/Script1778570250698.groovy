@@ -1,6 +1,7 @@
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import pages.LoginSignupPage
 import pages.HomePage
+import internal.GlobalVariable as GlobalVariable
 
 def loginPage = new LoginSignupPage()
 def homePage = new HomePage()
@@ -11,7 +12,7 @@ homePage.clickSignupLogin()
 
 loginPage.verifyText()
 
-loginPage.login('febritesting1@gmail.com', 'h1bZaoNZrXJGImBBMGIoZQ==')
+loginPage.login(GlobalVariable.email, GlobalVariable.encryptedPassword)
 
 WebUI.verifyTextPresent('Logged in as', false)
 

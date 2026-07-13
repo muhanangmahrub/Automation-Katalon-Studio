@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1_Register_User</name>
+   <name>TC15_Place_Order_Register_before_Checkout</name>
    <tag></tag>
    <comment></comment>
-   <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>77496019-7408-4720-a752-12b7090096f6</testCaseGuid>
+   <testCaseGuid>92ce19eb-e20c-46d9-8132-5eca94931826</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>e55a3b72-5109-4c12-bdba-845b5b8788cd</id>
+      <id>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
          <value>1</value>
@@ -17,211 +16,198 @@
       <testDataId>Data Files/register_data_new</testDataId>
    </testDataLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>name</value>
-      <variableId>bdd238a5-6a79-4255-8505-cfa13d160e70</variableId>
+      <variableId>a496044f-4d57-4e14-ad30-1f6bedc10a75</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>email</value>
-      <variableId>b4be255a-f0d7-4c22-8ad3-2d8a56bf5c5d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>password</value>
-      <variableId>90cf9ead-3e44-43d7-9af7-1e4c40f9f8b7</variableId>
+      <variableId>d306dcb1-958b-4eab-8ce3-411d89c8e9c0</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>day</value>
-      <variableId>2eb82e9c-1101-4459-9842-167f37e387ff</variableId>
+      <variableId>61ad9c99-1988-47e1-8e74-7bac0e384894</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>month</value>
-      <variableId>f235fef2-e4f2-40b6-8c66-ad6dff98c13d</variableId>
+      <variableId>07fd0d0b-5e4c-4e99-baf4-ef8b4937fcb3</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>year</value>
-      <variableId>c0106b6c-ddd6-4f10-acc1-9e7cf5288ed7</variableId>
+      <variableId>7de64201-7d31-40f1-a2aa-546bcdfe189e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>firstname</value>
-      <variableId>770eed1e-cb60-4eb8-ade5-a50765d4ca85</variableId>
+      <variableId>04b09a31-8602-40d3-9dbe-a2e44d575fd2</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>lastname</value>
-      <variableId>cb5f413a-8bf2-4f16-8a62-54d6902d2626</variableId>
+      <variableId>67331b32-e76b-462e-9bdd-0c27a6548bc8</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>company</value>
-      <variableId>25d81c7c-981c-4301-b473-8d2511d18d9a</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>address</value>
-      <variableId>0489a473-3f06-48fd-99c4-2ac211b5ea3f</variableId>
+      <variableId>32ff5105-0e86-4662-b756-8ec175ecfc4b</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>address2</value>
-      <variableId>3715045a-cf0e-4986-bac1-22136cbee9cb</variableId>
+      <variableId>f1e86b77-7020-4561-97d4-9f693091c95a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>country</value>
-      <variableId>a57285b1-6e65-48a3-8a77-4f5d8e598f46</variableId>
+      <variableId>02e4cd8d-0ab6-4f6b-b9e7-4d0a4058794c</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>state</value>
-      <variableId>8fb65c13-901b-4acf-93a2-92de5de31c02</variableId>
+      <variableId>1da0ad4e-1e4e-42c0-bb0f-ee8c350f916e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>city</value>
-      <variableId>a213f3c5-6179-48b6-b614-891c6e26dd81</variableId>
+      <variableId>73608104-645d-4a73-9c05-86e3312d40d8</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>zipcode</value>
-      <variableId>8ce61453-b4e3-4c25-9284-cbf0594cd1d4</variableId>
+      <variableId>2d4aec4e-8b49-486a-80dd-eed44fbf8005</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>e55a3b72-5109-4c12-bdba-845b5b8788cd</testDataLinkId>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>mobile</value>
-      <variableId>4057fd8f-8d1e-46b1-888a-20a4cd11099e</variableId>
+      <variableId>c63776fc-a986-40d9-a1d2-d0e31d5871fb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>961ddb06-08ca-49ba-88f8-2ce24ae6ce56</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>company</value>
+      <variableId>b2b7f958-ed16-4d80-b82e-d8a69223418e</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>bdd238a5-6a79-4255-8505-cfa13d160e70</id>
+      <id>a496044f-4d57-4e14-ad30-1f6bedc10a75</id>
       <masked>false</masked>
       <name>name</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b4be255a-f0d7-4c22-8ad3-2d8a56bf5c5d</id>
-      <masked>false</masked>
-      <name>email</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>90cf9ead-3e44-43d7-9af7-1e4c40f9f8b7</id>
+      <id>d306dcb1-958b-4eab-8ce3-411d89c8e9c0</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>2eb82e9c-1101-4459-9842-167f37e387ff</id>
+      <id>61ad9c99-1988-47e1-8e74-7bac0e384894</id>
       <masked>false</masked>
       <name>day</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f235fef2-e4f2-40b6-8c66-ad6dff98c13d</id>
+      <id>07fd0d0b-5e4c-4e99-baf4-ef8b4937fcb3</id>
       <masked>false</masked>
       <name>month</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>c0106b6c-ddd6-4f10-acc1-9e7cf5288ed7</id>
+      <id>7de64201-7d31-40f1-a2aa-546bcdfe189e</id>
       <masked>false</masked>
       <name>year</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>770eed1e-cb60-4eb8-ade5-a50765d4ca85</id>
+      <id>04b09a31-8602-40d3-9dbe-a2e44d575fd2</id>
       <masked>false</masked>
       <name>firstname</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>cb5f413a-8bf2-4f16-8a62-54d6902d2626</id>
+      <id>67331b32-e76b-462e-9bdd-0c27a6548bc8</id>
       <masked>false</masked>
       <name>lastname</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>25d81c7c-981c-4301-b473-8d2511d18d9a</id>
-      <masked>false</masked>
-      <name>company</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>0489a473-3f06-48fd-99c4-2ac211b5ea3f</id>
+      <id>32ff5105-0e86-4662-b756-8ec175ecfc4b</id>
       <masked>false</masked>
       <name>address</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>3715045a-cf0e-4986-bac1-22136cbee9cb</id>
+      <id>f1e86b77-7020-4561-97d4-9f693091c95a</id>
       <masked>false</masked>
       <name>address2</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a57285b1-6e65-48a3-8a77-4f5d8e598f46</id>
+      <id>02e4cd8d-0ab6-4f6b-b9e7-4d0a4058794c</id>
       <masked>false</masked>
       <name>country</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>8fb65c13-901b-4acf-93a2-92de5de31c02</id>
+      <id>1da0ad4e-1e4e-42c0-bb0f-ee8c350f916e</id>
       <masked>false</masked>
       <name>state</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a213f3c5-6179-48b6-b614-891c6e26dd81</id>
+      <id>73608104-645d-4a73-9c05-86e3312d40d8</id>
       <masked>false</masked>
       <name>city</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>8ce61453-b4e3-4c25-9284-cbf0594cd1d4</id>
+      <id>2d4aec4e-8b49-486a-80dd-eed44fbf8005</id>
       <masked>false</masked>
       <name>zipcode</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4057fd8f-8d1e-46b1-888a-20a4cd11099e</id>
+      <id>c63776fc-a986-40d9-a1d2-d0e31d5871fb</id>
       <masked>false</masked>
       <name>mobile</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b2b7f958-ed16-4d80-b82e-d8a69223418e</id>
+      <masked>false</masked>
+      <name>company</name>
    </variable>
 </TestCaseEntity>

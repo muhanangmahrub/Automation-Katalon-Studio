@@ -12,14 +12,21 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>531f9e71-5146-4f26-bc2c-8cff2aa4f1d4</testSuiteGuid>
    <testCaseLink>
-      <guid>8593277d-7fe6-46c4-bc1c-cdc1196cccf9</guid>
+      <guid>c3acc8d8-e079-49c8-8710-e251ea8a10e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Product_Browsing/TC8_All_Products_And_Product_Detail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8dd5cc2a-0c92-4863-8320-3aa8e3b6bd4d</guid>
+      <guid>92f6f350-0f57-43fd-b998-b40a32b570fc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Product_Browsing/TC18_View_Category_Products</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1bde3630-d217-41c1-af47-2eaaff4deb0c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Product_Browsing/TC9_Search_Product</testCaseId>

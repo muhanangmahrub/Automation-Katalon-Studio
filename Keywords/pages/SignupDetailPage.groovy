@@ -27,6 +27,7 @@ public class SignupDetailPage {
 		WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_City _'), city)
 		WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_zipcode'), zipcode)
 		WebUI.setText(findTestObject('Page_Automation Exercise - Signup/input_Mobile Number _'), mobile)
+		WebUI.takeScreenshot()
 		WebUI.click(findTestObject('Page_Automation Exercise - Signup/button_Create Account'))
 	}
 }

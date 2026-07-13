@@ -31,7 +31,7 @@ class BrowserExecutionListener {
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		WebUI.openBrowser('')
 		
-		WebUI.navigateToUrl('https://automationexercise.com/')
+		WebUI.navigateToUrl(GlobalVariable.baseURL)
 		
 		WebUI.maximizeWindow()
 	}

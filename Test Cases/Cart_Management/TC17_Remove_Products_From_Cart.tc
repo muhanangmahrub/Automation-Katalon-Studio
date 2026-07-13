@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC15</name>
+   <name>TC17_Remove_Products_From_Cart</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>92ce19eb-e20c-46d9-8132-5eca94931826</testCaseGuid>
+   <testCaseGuid>2eab887e-b9a9-4afc-9eea-99873a178415</testCaseGuid>
 </TestCaseEntity>
