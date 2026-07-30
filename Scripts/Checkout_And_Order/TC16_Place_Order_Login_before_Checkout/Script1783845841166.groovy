@@ -14,9 +14,9 @@ def allProductsPage = new AllProductsPage()
 def loginSignupPage = new LoginSignupPage()
 def paymentPage = new PaymentPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 loginSignupPage.verifyText()
 
@@ -26,7 +26,7 @@ WebUI.verifyTextPresent('Logged in as', false)
 
 WebUI.takeScreenshot()
 
-homePage.verifyLoggedIn()
+homePage.header.verifyLoggedIn()
 
 allProductsPage.addToCart("2")
 

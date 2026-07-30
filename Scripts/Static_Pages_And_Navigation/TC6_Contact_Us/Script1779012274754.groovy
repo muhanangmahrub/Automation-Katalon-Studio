@@ -5,10 +5,10 @@ import pages.ContactUsPage
 def homePage = new HomePage()
 def contactUsPage = new ContactUsPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickContactUs()
+homePage.header.clickContactUs()
 
 contactUsPage.fillInForm()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()

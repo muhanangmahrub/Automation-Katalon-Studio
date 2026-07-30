@@ -19,9 +19,9 @@ def accountCreatedPage = new AccountCreatedPage()
 def paymentPage = new PaymentPage()
 def accountDeletedPage = new AccountDeletedPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 loginSignupPage.verifyText()
 
@@ -64,6 +64,6 @@ paymentPage.clickPayButton()
 
 paymentPage.verifyOrderPlaced()
 
-homePage.clickDeleteAccount()
+homePage.header.clickDeleteAccount()
 
 accountDeletedPage.verifyAccountDeleted()

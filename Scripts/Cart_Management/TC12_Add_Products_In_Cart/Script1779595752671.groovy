@@ -7,9 +7,9 @@ def homePage = new HomePage()
 def cartPage = new CartPage()
 def allProductsPage = new AllProductsPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickProducts()
+homePage.header.clickProducts()
 
 allProductsPage.verifyProductsPage()
 

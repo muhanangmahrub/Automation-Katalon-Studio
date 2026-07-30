@@ -14,7 +14,7 @@ def accountDeletedPage = new AccountDeletedPage()
 
 homePage.verifyLoginSignupVisible()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 registerPage.signup(name)
 
@@ -38,9 +38,9 @@ accountCreatedPage.verifyAccountCreated()
 
 accountCreatedPage.clickContinue()
 
-homePage.verifyLoggedIn()
+homePage.header.verifyLoggedIn()
 
-homePage.clickDeleteAccount()
+homePage.header.clickDeleteAccount()
 
 accountDeletedPage.verifyAccountDeleted()
 

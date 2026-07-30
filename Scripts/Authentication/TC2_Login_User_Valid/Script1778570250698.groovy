@@ -6,9 +6,9 @@ import internal.GlobalVariable as GlobalVariable
 def loginPage = new LoginSignupPage()
 def homePage = new HomePage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 loginPage.verifyText()
 
@@ -18,8 +18,8 @@ WebUI.verifyTextPresent('Logged in as', false)
 
 WebUI.takeScreenshot()
 
-homePage.verifyLoggedIn()
+homePage.header.verifyLoggedIn()
 
-homePage.clickLogout()
+homePage.header.clickLogout()
 
 WebUI.takeScreenshot()

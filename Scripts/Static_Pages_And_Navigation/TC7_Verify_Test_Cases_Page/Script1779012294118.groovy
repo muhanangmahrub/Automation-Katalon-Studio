@@ -5,8 +5,8 @@ import pages.TestCasesPage
 def homePage = new HomePage()
 def testCasesPage = new TestCasesPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickTestCases()
+homePage.header.clickTestCases()
 
 testCasesPage.verifyInTestCasesPage()

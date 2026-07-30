@@ -5,7 +5,7 @@ import pages.LoginSignupPage
 def homePage = new HomePage()
 def loginPage = new LoginSignupPage()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 loginPage.verifyText()
 

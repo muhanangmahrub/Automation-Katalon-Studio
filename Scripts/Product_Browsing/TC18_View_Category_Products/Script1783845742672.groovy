@@ -11,6 +11,6 @@ def homePage = new HomePage()
 def accountCreatedPage = new AccountCreatedPage()
 def accountDeletedPage = new AccountDeletedPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.viewCategoryProducts()
+homePage.sidebar.viewCategoryProducts()

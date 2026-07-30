@@ -5,14 +5,14 @@ import pages.CartPage
 def homePage = new HomePage()
 def cartPage = new CartPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickCart()
+homePage.header.clickCart()
 
-cartPage.scrollToFooter()
+cartPage.footer.scrollToFooter()
 
-cartPage.verifySubscriptionVisible()
+cartPage.footer.verifySubscriptionVisible()
 
-cartPage.subscribeEmail("zulfian2018@gmail.com")
+cartPage.footer.subscribeEmail("zulfian2018@gmail.com")
 
-cartPage.verifySubscriptionSuccess()
+cartPage.footer.verifySubscriptionSuccess()

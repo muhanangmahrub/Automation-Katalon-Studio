@@ -5,9 +5,9 @@ import pages.LoginSignupPage
 def homePage = new HomePage()
 def loginPage = new LoginSignupPage()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()
 
-homePage.clickSignupLogin()
+homePage.header.clickSignupLogin()
 
 loginPage.verifyText()
 
@@ -17,6 +17,6 @@ WebUI.verifyTextPresent('Logged in as', false)
 
 WebUI.takeScreenshot()
 
-homePage.clickLogout()
+homePage.header.clickLogout()
 
-homePage.verifyLoginSignupVisible()
+homePage.header.verifyLoginSignupVisible()

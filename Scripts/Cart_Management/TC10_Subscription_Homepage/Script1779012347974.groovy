@@ -3,10 +3,10 @@ import pages.HomePage
 
 def homePage = new HomePage()
 
-homePage.scrollToFooter()
+homePage.footer.scrollToFooter()
 
-homePage.verifySubscriptionVisible()
+homePage.footer.verifySubscriptionVisible()
 
-homePage.subscribeEmail("denny_caknan@gmail.com")
+homePage.footer.subscribeEmail("denny_caknan@gmail.com")
 
-homePage.verifySubscriptionSuccess()
+homePage.footer.verifySubscriptionSuccess()
