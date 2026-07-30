@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Continue</name>
+   <name>a_Dynamic brands name</name>
    <tag></tag>
-   <elementGuidId>d292cc28-968c-47dc-a814-236ef4fa9d2f</elementGuidId>
+   <elementGuidId>ed9aaab7-c64c-4af3-9089-ed482c13c5d1</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(@href, '${brandName}')]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[normalize-space()='Continue']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

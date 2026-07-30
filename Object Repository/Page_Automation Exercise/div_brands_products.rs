@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Download Invoice</name>
+   <name>div_brands_products</name>
    <tag></tag>
-   <elementGuidId>e601d28d-d712-4e51-8d41-3d8e08133dd1</elementGuidId>
+   <elementGuidId>5d3b6e0b-9f7c-492b-a582-276e51f039a2</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='brands_products']</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[normalize-space()='Download Invoice']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
