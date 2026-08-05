@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@data-qa='expiry-year']</value>
+         <value>//input[@name='expiry_year']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

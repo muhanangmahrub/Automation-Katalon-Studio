@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'product-overlay')]//*[@data-product-id=${id}]</value>
+         <value>//a[@data-product-id='${productId}' and contains(@class,'add-to-cart')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

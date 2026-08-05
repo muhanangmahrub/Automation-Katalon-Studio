@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Pay Button</name>
+   <name>a_Add to Cart First Result</name>
    <tag></tag>
-   <elementGuidId>3665eab0-70ef-48c2-b558-fcb3e2ca029c</elementGuidId>
+   <elementGuidId>b81b6665-2500-4f82-88c0-987a3503b6d8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='submit']</value>
+         <value>(//a[contains(@class,'add-to-cart')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

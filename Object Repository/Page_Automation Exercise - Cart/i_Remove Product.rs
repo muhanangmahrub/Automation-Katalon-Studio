@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//i[@class='fa fa-times'])[${id}]</value>
+         <value>//a[@class='cart_quantity_delete' and @data-product-id='${id}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
